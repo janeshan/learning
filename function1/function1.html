@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+    <script>
+	function add (x,y)
+	{
+		return (x+y);
+    } 
+    
+	function sub (x,y)
+	{
+		return (y-x);
+	} 
+	
+	function mul (x,y)
+	{
+		return (x*y);
+	} 
+    
+    function div (x,y)
+	{
+		return (x/y);
+    } 
+    
+    var result1 = add(mul(1, 2), div(12, 4));
+    alert ("result1 = "+ result1);
+
+    var result2 = add(div(4, 2), add(8, 4));
+    alert ("result2 = "+ result2);
+
+    var result3 = mul(add(0, 2), div(4, 4));
+    alert ("result3 = "+ result3);
+    
+    var result4 = sub(add(0, 2), mul(4, 0));
+    alert ("result4 = "+ result4);
+
+    var result5 = div(add(0, 2), mul(4, 0));
+    alert ("result5 = "+ result5);
+	</script>
+	  
+</body>
+
+</html>
