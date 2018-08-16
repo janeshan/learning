@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+    <script>
+	function add (x,y)
+	{
+		return (x+y);
+	} 
+	
+	
+	var param1 = +prompt ("Введите два числа: первое число = ","1");
+	
+	if (param1 != null && param1 != "")
+	{
+		if (isNaN(param1))
+		{
+			alert ("Не похоже на число.Пока!)");
+		}
+		
+		else 
+		{
+			var param2 = +prompt ("Второе число =","1");
+			if (param2 == null || param2 == "")
+			{
+				alert ("Ввод отменен");
+			}
+		
+			else 
+			{
+				if (isNaN(param2))
+				{
+					alert ("Не похоже на число.Пока!)");
+				}
+				
+				else
+				{
+					var result = add (param1, param2);
+					alert ("Результат сложения " + param1 + " + " + param2 + " = " + result);
+				}
+			}
+		}
+	}	
+	else 
+	{
+		alert ("Увидимся в другой раз)");
+	}			
+		
+		
+		
+		
+	/* Какие могут возникнуть нюансы при работе с пользовательским вводом? Как предотвратить возникновение проблем? 
+		Ответ: если юзер отменит ввод или введет символы. 
+	*/
+	
+		</script>
+	  
+</body>
+
+</html>
